@@ -105,6 +105,7 @@ def help_command() -> str:
     )
 
 def main():
+    contacts = AddressBook()
     print("Welcome to the assistant bot!")
 
     commands: Dict[str, Callable] = {
