@@ -105,17 +105,6 @@ def help_command() -> str:
     )
 
 def main():
-    contacts = AddressBook()
-    record1 = Record("John")
-    record1.add_phone("1234567890")
-    record1.add_birthday("03.03.2000")
-    contacts.add_record(record1)
-    record2 = Record("Jane")
-    record2.add_phone("0987654321")
-    record2.add_birthday("06.03.2000")
-    contacts.add_record(record2)
-
-
     print("Welcome to the assistant bot!")
 
     commands: Dict[str, Callable] = {
